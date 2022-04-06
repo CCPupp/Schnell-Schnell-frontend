@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-body">
+    <mdb-form-control>
+      <input mdbInput type="email" id="emailInput" class="form-control" #emailInput />
+      <label mdbLabel class="form-label" for="emailInput">Username</label>
+    </mdb-form-control>
+    <br />
+    <mdb-form-control>
+      <input mdbInput type="password" id="passwordInput" class="form-control" #passwordInput />
+      <label mdbLabel class="form-label" for="passwordInput">Password</label>
+    </mdb-form-control>
+    <br />
+    <mdb-form-control>
+      <input mdbInput type="text" id="tokenInput" class="form-control" #tokenInput />
+      <label mdbLabel class="form-label" for="tokenInput">Token</label>
+    </mdb-form-control>
+    <br />
+    <button (click)="loginFunc(emailInput.value, passwordInput.value, tokenInput.value)" type="button" class="btn btn-primary">Login</button>
+    <br />
+    <h2>{{alertText}}</h2>
+  </div>
+</div>
